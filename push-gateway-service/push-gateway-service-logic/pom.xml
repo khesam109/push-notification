@@ -11,5 +11,15 @@
 
     <artifactId>push-gateway-service-logic</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>ir.isc.co</groupId>
+            <artifactId>common-logic</artifactId>
+        </dependency>
 
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+        </dependency>
+    </dependencies>
 </project>

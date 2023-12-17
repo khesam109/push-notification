@@ -19,6 +19,7 @@
         <module>push-gateway-service</module>
         <module>push-service</module>
         <module>infrastructure</module>
+        <module>common</module>
     </modules>
 
     <properties>
@@ -65,6 +66,12 @@
             <dependency>
                 <groupId>ir.co.isc</groupId>
                 <artifactId>push-service-repository</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>ir.isc.co</groupId>
+                <artifactId>common-logic</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
         </dependencies>
