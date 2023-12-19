@@ -11,6 +11,10 @@
 
     <groupId>ir.co.isc</groupId>
     <artifactId>infrastructure</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>kafka</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>

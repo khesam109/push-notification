@@ -3,7 +3,7 @@ package ir.co.isc.push.gateway.controller;
 import ir.co.isc.push.gateway.logic.dto.PublishNotificationCommand;
 import ir.co.isc.push.gateway.logic.dto.PublishNotificationResponse;
 import ir.co.isc.push.gateway.logic.mapper.PushNotificationMapper;
-import ir.co.isc.push.gateway.logic.port.PublishPrivateNotificationGatewayService;
+import ir.co.isc.push.gateway.logic.port.input.PublishPrivateNotificationGatewayService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

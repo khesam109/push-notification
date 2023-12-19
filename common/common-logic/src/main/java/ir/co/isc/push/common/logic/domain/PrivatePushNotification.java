@@ -7,24 +7,24 @@ import ir.co.isc.push.common.logic.valueobject.PushNotificationTrackId;
 
 import java.util.UUID;
 
-public class PushNotification extends BaseDomainModel<PushNotificationId> {
+public class PrivatePushNotification extends BaseDomainModel<PushNotificationId> {
 
     private String title;
     private String message;
     private PushNotificationStatus status;
     private PushNotificationTrackId trackId;
 
-    private PushNotification() {}
+    private PrivatePushNotification() {}
 
-    public static PushNotification createPushNotification(String title, String message) {
-        PushNotification pushNotification = new PushNotification();
-        pushNotification.setId(new PushNotificationId(UUID.randomUUID()));
-        pushNotification.title = title;
-        pushNotification.message = message;
-        pushNotification.status = PushNotificationStatus.NOT_DELIVERED;
-        pushNotification.trackId = new PushNotificationTrackId(UUID.randomUUID());
+    public static PrivatePushNotification createPushNotification(String title, String message) {
+        PrivatePushNotification privatePushNotification = new PrivatePushNotification();
+        privatePushNotification.setId(new PushNotificationId(UUID.randomUUID()));
+        privatePushNotification.title = title;
+        privatePushNotification.message = message;
+        privatePushNotification.status = PushNotificationStatus.NOT_DELIVERED;
+        privatePushNotification.trackId = new PushNotificationTrackId(UUID.randomUUID());
 
-        return pushNotification;
+        return privatePushNotification;
     }
 
     public String getTitle() {

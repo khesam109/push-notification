@@ -1,8 +1,10 @@
 package ir.co.isc.push.common.logic.domain;
 
+import ir.co.isc.push.common.logic.valueobject.BaseId;
+
 import java.util.Objects;
 
-public abstract class BaseDomainModel<ID> {
+public abstract class BaseDomainModel<ID extends BaseId<?>> {
 
     private ID id;
 
