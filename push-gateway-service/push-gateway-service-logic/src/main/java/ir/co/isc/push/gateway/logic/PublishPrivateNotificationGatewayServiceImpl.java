@@ -2,13 +2,11 @@ package ir.co.isc.push.gateway.logic;
 
 import ir.co.isc.push.common.logic.domain.PushNotification;
 import ir.co.isc.push.gateway.logic.dto.PublishNotificationResponse;
-import ir.co.isc.push.gateway.logic.port.PublishNotificationGatewayService;
+import ir.co.isc.push.gateway.logic.port.PublishPrivateNotificationGatewayService;
 import org.springframework.stereotype.Service;
 
-import java.util.UUID;
-
 @Service
-public class PublishNotificationGatewayServiceImpl implements PublishNotificationGatewayService {
+public class PublishPrivateNotificationGatewayServiceImpl implements PublishPrivateNotificationGatewayService {
 
     @Override
     public PublishNotificationResponse publishPrivateNotification(PushNotification pushNotification) {
